@@ -7,6 +7,20 @@
     android:background="#7E7E7E"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:background="#FFD500"
+        android:backgroundTint="#FFD500"
+        android:text="Restart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startButton"
+        app:strokeColor="#FFFFFF" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -22,63 +36,60 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.094" />
 
-    <TextView
-        android:id="@+id/timeView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="208dp"
-        android:textColor="#202020"
-        android:textSize="40sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/timeView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="208dp"
-        android:textColor="#202020"
-        android:textSize="40sp"
-        app:layout_constraintStart_toEndOf="@+id/timeView"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/timeView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="208dp"
-        android:layout_marginEnd="60dp"
-        android:textColor="#202020"
-        android:textSize="40sp"
-        app:layout_constraintEnd_toStartOf="@+id/timeView"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
     <Button
         android:id="@+id/startButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="90dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="84dp"
         android:background="#89FF00"
         android:backgroundTint="#19FF00"
         android:text="Start"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timeView"
+        app:layout_constraintTop_toBottomOf="@+id/slotImage2"
         app:strokeColor="#FFFFFF" />
 
     <Button
         android:id="@+id/stopButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="90dp"
         android:background="#89FF00"
         android:backgroundTint="#FF0000"
         android:text="Stop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timeView"
+        app:layout_constraintTop_toBottomOf="@+id/slotImage2"
         app:strokeColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/slotImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="176dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/cherry" />
+
+    <ImageView
+        android:id="@+id/slotImage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        app:layout_constraintEnd_toStartOf="@+id/slotImage3"
+        app:layout_constraintStart_toEndOf="@+id/slotImage"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/cherry" />
+
+    <ImageView
+        android:id="@+id/slotImage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/cherry" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
